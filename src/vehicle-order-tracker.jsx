@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { BrowserRouter, Link, Redirect, Route, Switch } from "react-router-dom"
 import Dashboard from "./ui/pages/dashboard/dashboard"
 import OrderDetails from "./ui/pages/order-details/order-details"
@@ -27,3 +27,4 @@ const VehicleOrderTracker = () => {
 }
 
 export default VehicleOrderTracker
+

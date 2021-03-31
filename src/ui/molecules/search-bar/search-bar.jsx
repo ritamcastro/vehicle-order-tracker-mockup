@@ -1,10 +1,11 @@
 import React from "react"
 
 const SearchBar = () => {
+
     return (
-
-        <div role="search" aria-label="Search order">
-
+        <div role="searchbox" aria-label="Search for an order">
+            <input aria-labelledby="Search keywords" type="search"
+                name="search" placeholder="Search" spellCheck="false" />
         </div>
         // <form id="search" role="search">
         //     <label for="search-input">Search this site</label>

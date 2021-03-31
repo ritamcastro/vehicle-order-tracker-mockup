@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const ViewDetailsButton = ({ to }) => {
 
-    return <Link to={to}>
+    return <Link className="sassy-link" to={to}>
         View details
     </Link>
 }

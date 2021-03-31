@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import FiltersButton from "../../molecules/filters-button/filters-button"
-import OrderTable from "../../molecules/order-table/order-table"
+import OrdersTable from "../../molecules/orders-table/orders-table"
 import SearchBar from "../../molecules/search-bar/search-bar"
 
 const OrdersList = () => {
@@ -11,7 +11,7 @@ const OrdersList = () => {
             <SearchBar />
             <FiltersButton />
 
-            <OrderTable />
+            <OrdersTable />
         </div>
     )
 }

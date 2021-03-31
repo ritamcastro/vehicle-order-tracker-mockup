@@ -14,13 +14,9 @@ const OrderDetails = () => {
 
     return (
         <div role="region" aria-label="Order details">
-            <h1>
-                These are the order details
-            </h1>
             <BackButton />
-            <p>
-                {order && order.name}
-            </p>
+            <OrderSummary order={order} />
+            <OrderStatusTracker order={order} />
         </div>
     )
 }

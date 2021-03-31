@@ -10,9 +10,9 @@ const BackButton = () => {
     }
 
     return (
-        <button type="button" onClick={takeMePlaces}>
+        <button type="button" onClick={takeMePlaces} >
             Back
-        </button>
+        </button >
     )
 }
 
