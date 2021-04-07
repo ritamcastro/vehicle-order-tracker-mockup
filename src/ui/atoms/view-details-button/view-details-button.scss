@@ -1,0 +1,17 @@
+.view-details-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #004666;
+    border: solid 1px #004666;
+    border-radius: 14px;
+
+    width: 93px;
+    height: 28px;
+
+    a {
+        font-size: 14px;
+        text-decoration: none;
+    }
+}

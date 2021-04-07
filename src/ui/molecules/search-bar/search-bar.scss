@@ -1,0 +1,13 @@
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+
+    > input {
+        border: none;
+    }
+
+    > img {
+        margin-right: 12px;
+    }
+}

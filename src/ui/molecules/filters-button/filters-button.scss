@@ -1,0 +1,10 @@
+.filters-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: end;
+
+    > img {
+        margin-right: 12px;
+    }
+}

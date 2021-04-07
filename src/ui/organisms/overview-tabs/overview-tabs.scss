@@ -1,0 +1,11 @@
+.overview-tabs {
+    border: solid 1px grey;
+    border-radius: 10px;
+    height: 180px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 0 20px;
+}

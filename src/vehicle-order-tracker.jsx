@@ -2,6 +2,7 @@ import React from "react"
 import { BrowserRouter, Link, Redirect, Route, Switch } from "react-router-dom"
 import Dashboard from "./ui/pages/dashboard/dashboard"
 import OrderDetails from "./ui/pages/order-details/order-details"
+import "./vehicle-order-tracker.scss"
 
 const VehicleOrderTracker = () => {
 
@@ -9,6 +10,7 @@ const VehicleOrderTracker = () => {
         <header>
             <Link to="/">
                 <img alt="Home" src="assets/images/mandala.png" height="42" width="42" />
+                Vehicle Order Tracker Mockup
             </Link>
         </header>
 
@@ -27,4 +29,3 @@ const VehicleOrderTracker = () => {
 }
 
 export default VehicleOrderTracker
-

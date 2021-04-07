@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react"
 import { getOrders } from "../../../services/get-orders"
 import FormattedDateNumbers from "../../atoms/formatted-date/numbers/formatted-date-numbers"
 import ViewDetailsButton from "../../atoms/view-details-button/view-details-button"
+import Progress from "../progress/progress"
+import "./orders-table.scss"
 
 const OrdersTable = () => {
 
@@ -10,7 +12,7 @@ const OrdersTable = () => {
     useEffect(() => setOrders(getOrders), [])
 
     return (
-        <table aria-label="Orders list">
+        <table aria-label="Orders list" className="table">
             <thead>
                 <tr>
                     <th>Customer</th>
@@ -28,7 +30,7 @@ const OrdersTable = () => {
                             <td>{order.name}</td>
                             <td>{order.vehicle}</td>
                             <td>{order.status}</td>
-                            <td>{order.progress}</td>
+                            <td><Progress orderProgress={order.progress} /></td>
                             <td><FormattedDateNumbers value={order.arrivalDate} /></td>
                             <td><ViewDetailsButton to={`/orders/${order.id}`} /></td>
                         </tr>
@@ -40,4 +42,3 @@ const OrdersTable = () => {
 }
 
 export default OrdersTable
-
