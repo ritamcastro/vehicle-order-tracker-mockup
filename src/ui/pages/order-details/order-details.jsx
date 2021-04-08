@@ -17,9 +17,15 @@ const OrderDetails = () => {
 
     return (
         <div role="region" aria-label="Order details" className="order-details">
-            <BackButton />
-            <OrderSummary order={order} />
-            <OrderStatusTracker order={order} />
+
+            <div className="order-details-header">
+                <BackButton />
+                <h1>{order && order.name}'s Order</h1>
+            </div>
+            <div className="order-details-content">
+                <OrderSummary order={order} />
+                <OrderStatusTracker order={order} />
+            </div>
         </div>
     )
 }

@@ -1,4 +1,23 @@
 .order-details {
-    // border: 1px solid red;
-    margin: 120px;
+    display: flex;
+    flex-direction: column;
+
+    margin: 80px;
+
+    &-header {
+        padding: 30px;
+        margin-bottom: 40px;
+        background-color: #001e50;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    &-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 }
