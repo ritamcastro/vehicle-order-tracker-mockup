@@ -47,32 +47,32 @@ export const getOrderDetails = (orderId) => {
             return {
                 name: "Jane Doe",
                 model: "Golf GTI",
-                colour: "red",
+                colour: "Red",
                 orderDate: getNWeeksAgo(dateString1, 16),
                 buildDate: getNWeeksAgo(dateString1, 4),
                 arrivalDate: dateString1,
-                status: "on time",
+                status: "On time",
             }
         case "2":
             return {
                 name: "Dana Scully",
                 model: "ID.3",
-                colour: "grey",
+                colour: "Grey",
                 orderDate: getNWeeksAgo(dateString2, 20),
                 buildDate: getNWeeksAgo(dateString2, 6),
                 arrivalDate: dateString2,
-                status: "delayed",
+                status: "Delayed",
             }
 
         case "3":
             return {
                 name: "Fox Mulder",
                 model: "T-Roc",
-                colour: "midnight",
+                colour: "Midnight",
                 orderDate: getNWeeksAgo(dateString3, 24),
                 buildDate: getNWeeksAgo(dateString3, 2),
                 arrivalDate: dateString3,
-                status: "on time",
+                status: "On time",
             }
         default:
             console.log("Ops, no such order");
